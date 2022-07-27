@@ -1,0 +1,43 @@
+.about-wrap { 
+    height: 100vh; 
+    background-color: 
+    $primaryColor;
+}
+.about-box{
+    display: flex;
+    flex-direction: row;
+}
+.box-left{
+border: 1px solid;
+border-color: $defaultColor;
+width: 40%;
+height: 642px;
+float: left;
+top: 1312px;
+border-right: 0px;
+}
+.box-right{
+border: 1px solid;
+border-color: $defaultColor;
+width: 60%;
+height: 642px;
+float: right;
+top: 1312px;
+}
+
+@media (max-width: 800px) {
+   .about-box{
+    flex-direction: column;
+  
+   }
+   .box-left{
+    width: 100%;
+    border: 1px solid;
+    border-color: $defaultColor;
+ 
+   }
+   .box-right{
+    width: 100%;
+   }
+   
+  }

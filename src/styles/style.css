@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&family=Roboto:wght@900&display=swap");
+.navbar {
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  -webkit-animation: 3s fadeIn;
+          animation: 3s fadeIn;
+}
+.navbar a {
+  color: rgb(230, 51, 51);
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.homepage {
+  height: 100vh;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  align-items: center;
+}
+
+.homepage h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+}
+
+.homepage h2 {
+  font-family: "Poppins";
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.homepage button {
+  background-color: rgb(230, 51, 51);
+  border-radius: 50px;
+  border-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.show-logo a {
+  display: none;
+  text-decoration: none;
+}
+
+.logo:hover + .show-logo a {
+  display: block;
+  margin-left: -15px;
+}
+
+@media (max-width: 800px) {
+  .homepage h1 {
+    text-align: center;
+  }
+  .homepage h2 {
+    text-align: center;
+  }
+  .homepage button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    padding: 10px;
+  }
+}
+.about-wrap {
+  height: 100vh;
+  background-color: rgb(37, 37, 37);
+}
+
+.about-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-left {
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 642px;
+  float: left;
+  top: 1312px;
+  border-right: 0px;
+}
+
+.box-right {
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  width: 60%;
+  height: 642px;
+  float: right;
+  top: 1312px;
+}
+
+@media (max-width: 800px) {
+  .about-box {
+    flex-direction: column;
+  }
+  .box-left {
+    width: 100%;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+  }
+  .box-right {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

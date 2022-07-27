@@ -1,0 +1,60 @@
+@mixin flexCenter () {
+    display: flex;
+    align-items: center;
+
+}
+
+.homepage{
+    height: 100vh;
+    background-color: $primaryColor;
+    @include flexCenter();
+  }
+  .homepage h1 {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 80px;
+      color: $defaultColor;
+      letter-spacing: 3px;
+     
+  }
+  .homepage h2 {
+      font-family: 'Poppins';
+      font-size: 60px;
+      color: $defaultColor;
+  }
+  .homepage button {
+      background-color: $secondaryColor;
+      border-radius: 50px;
+      border-color: transparent;
+      color: $defaultColor;
+  }
+  
+  .show-logo a{
+    display: none;
+    text-decoration: none;
+  
+  }
+  .logo{
+  &:hover + .show-logo a{
+      display: block;
+      margin-left: -15px;
+    }
+}
+
+  @media (max-width: 800px) {
+    .homepage h1 {
+        text-align: center;
+    }
+    .homepage h2 {
+        text-align: center;
+    }
+    .homepage button {
+       display: flex;
+       margin-left: auto;
+       margin-right: auto;
+       font-size: 25px;
+       padding: 10px;
+    }
+   
+  }

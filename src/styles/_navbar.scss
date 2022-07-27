@@ -1,0 +1,24 @@
+@mixin fontStyle {
+    color: $secondaryColor;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.navbar{
+  background-color: $defaultColor;
+    height: 80px;
+    animation: 3s fadeIn ;
+    a{
+     @include fontStyle();
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+  }
+  
